@@ -1,12 +1,12 @@
 .gameBoard{
-    width: 372;
-    height:372;
+    width: 372px;
+    height:372px;
     margin:auto;
 }
 
 .square{
     float: left;
-    background: rgba(255,255,255,.9);
+    background: rgba(255,255,255,.7);
     width: 125px;
     height: 125px;
     border: 1px solid black;
@@ -27,13 +27,18 @@
 
 body{
     background: no-repeat center center fixed;
-    background: url();
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi0HW_kq5ulIWc2LV_6HgXSM3lgvk2EmVCdUwkYJQehhuOEOBJvg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
+
 .spacer{
     padding: 5%;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: larger;
 }
