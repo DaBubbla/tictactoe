@@ -1,14 +1,16 @@
 $(document).ready(function(){
     
     var player = 1;
-    var random = Math.floor(Math.random() * 9) + 1; //console.log (random);
-    var rand = Math.floor(Math.random() * 9) + 1; //console.log(rand);
+    var random = Math.floor(Math.random() * 10); //console.log (random);
+    var rand = Math.floor(Math.random() * 10); //console.log(rand);
     var tag = ".sq" + rand.toString();
     
-    
+   /* $('#gameBoard').hide();*/
     $('#reload').hide();
     $('#win').hide();
     $('#HAL').hide();
+    
+  
     
     $('.square').on('click',function(event){
         
@@ -28,7 +30,7 @@ $(document).ready(function(){
                     });
                 }else{
                     player = 2;
-                    console.log(tag);
+                   //   console.log(tag);
                 }
             }else{
                 $(randomSquare(random)).addClass('oh').append('<i class="fa fa-circle-o" aria-hidden="true"></i>')
@@ -41,7 +43,7 @@ $(document).ready(function(){
                     });
                 }else{
                     player = 1;
-                    console.log(tag);
+                    return tag;
                 }
             } 
         }   
@@ -51,8 +53,9 @@ $(document).ready(function(){
     
     function randomSquare(rand){
         if($(tag).hasClass('ex')||$(tag).hasClass('oh')){    //does the "tag" have and ex or oh
-            rand = Math.floor(Math.random() * 9) + 1;   
+            rand = Math.floor(Math.random() * 10);   
             tag = ".sq" + rand.toString();
+            squareSelected.push(tag);
         }
         return tag; 
     };

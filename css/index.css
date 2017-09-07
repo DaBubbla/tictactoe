@@ -25,6 +25,7 @@
 }
 
 .oh{
+    color: black;
     background-color: white;
 }
 
@@ -43,4 +44,9 @@ body{
     color: white;
     font-weight: bold;
     font: 3em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
+}
+
+.choose{
+    color: white;
+    font-size: 25px;
 }
